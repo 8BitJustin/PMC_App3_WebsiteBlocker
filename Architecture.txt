@@ -1,4 +1,4 @@
 Program Architecture
 
-Windows:
-C:\Windows\System32\drivers\etc (hosts file)
+Mac and Linus: /etc/hosts
+Windows: C:\Windows\System32\drivers\etc (hosts file)
