@@ -16,6 +16,6 @@ So in the basic process of the steps to create:
   The second part is a bit trickier. If the hours are outside the working hours, the file would open the same, content variable the same, but the opened file would have seek(0) used to bring cursor to the top. Then for each line, the any method would be used to confirm if a website was present. If not, it will write the normal line. Anything after, truncate() would be used, indicating everything under would be removed. This basically creates a new hosts file, with the websites removed.
   Also, this uses time.sleep(5), so the while runs every 5 seconds, not every millisecond, which would suck. :)
   
-Once created, the .py file had a 'w' added (website_blocker.pyw), so it would simply run when double clicked. Then the task scheduler was used, task was created to run this file at startup, and will show as a pythonw.exe proggy within task manager.
+Once created, the .py file had a 'w' added (website_blocker.pyw), so it would simply run when double clicked. Then the task scheduler was used, task was created to run this file at startup, and will show as a python proggy within task manager. Make sure to direct the Program/Script field to the pythonw.exe file, and the Add arguments field should be set to the actual file itself. Ensure quotations are input also.
 
 Fun project, will need to dive deeper to find more uses for this. :)
